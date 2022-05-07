@@ -166,12 +166,12 @@ export default {
       try {
         const { data } = await axios({
           method: "POST",
-          url: "http://localhost:1337/contacts",
+          url: `http://${GRIDSOME_API_URL}/contacts`,
           data: this.form,
         });
-        window.alert('提交成功')
+        window.alert("提交成功");
       } catch (err) {
-        window.alert('发送失败，请稍后提示...')
+        window.alert("发送失败，请稍后提示...");
       }
     },
   },
