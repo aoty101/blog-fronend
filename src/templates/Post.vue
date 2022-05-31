@@ -4,7 +4,7 @@
     <header
       class="masthead"
       :style="{
-        backgroundImage: `url(http://${GRIDSOME_API_URL}${$page.post.cover.url})`,
+        backgroundImage: `url(${$page.post.cover.url})`,
       }"
     >
       <div class="container position-relative px-4 px-lg-5">
